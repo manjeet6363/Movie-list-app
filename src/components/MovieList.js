@@ -10,10 +10,10 @@ function MovieList() {
                 return (
                   <div key={post.id} className="list">
                     
-                    <img src={post.img.src} alt={post.img.alt} width="320px" height="450px"/>
-                    <h1>#{post.ranking}-{post.title} ({post.year})</h1>
-                    <h4>Distributor : {post.distributor}</h4>
-                    <h4>Amount : {post.amount}</h4>
+                    <img src={post.img.src} alt={post.img.alt} width="300px" height="400px"/>
+                    <h1 className='text'>{post.ranking}-{post.title} ({post.year})</h1>
+                    <h4 className='text'>Distributor : {post.distributor}</h4>
+                    <h4 className='text'>Amount : {post.amount}</h4>
                   </div>
                 )
               })}
